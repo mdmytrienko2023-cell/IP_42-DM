@@ -5,51 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <h1>Student card FORM</h1>
     </header>
-    <section>
-        <h2><b>Personal Information</b></h2>
-        <fieldset>
-            <legend>Details</legend>
-            Full Name:<input type="text">
-        </fieldset>
-        Email:<input type="email">
-        <fieldset>
-            <legend>Contact</legend>
-            Phone Number: <input type="tel">
-        </fieldset>
-        Password:<input type="password">
-        </section>
+    <main>
         <section>
-           Age:<input type="number">
-        </section>
-        <section>
-            Date of Birth:<input type="date">
-        </section>
-        <section>
-            Gender:<input type="radio">  Male, <input type="radio">  Female, <input type="radio">  Other
-        </section>
-        <section>
-            Languages Known: <input type="checkbox">English, <input type="checkbox">Spanish, <input type="checkbox">French
-        </section>
-        Country: <select>
-            <option>United States</option>
-            <option>Canada</option>
-            <option>Mexico</option>
-        </select>
-        <section>Multi-select Box <select multiple> - College Subjects (Mathematics,
-                Computer Science, Physics, Chemistry, English)</section>
-        <section>Range Slider <input type="range"> - Rate Interest in Computer
-            Science</section>
-        <section>Textarea (<textarea>) - Describe Skills</section>
-           <section></section>File Upload <input type="file"> - Upload Resume</section>
-           <section>Color Picker <input type="color"> - Pick Favorite Color</section>
-           <section>Time Picker <input type="time"> - Preferred Study Time</section>
+            <form action="." method="post">
+                <h2>Personal Information</h2>
+                <fieldset>
+                    <legend>Your details</legend>
+                    <label for="fullname">Full Name</label><input type="text" id="fullname" name="fullname">
+                    <label for="email">Email</label><input type="email" id="email" name="email">
+                    <label for="password">Password</label><input type="password" id="password" name="password">
+                    <label for="age">Age</label><input type="number" id="age" name="age">
+                    <label for="dob">Date of Birth</label><input type="date" id="dob" name="dob">
+                    <label>Gender</label><input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label> <input type="radio" id="female" name="gender" value="female"> <label
+                        for="female">Female</label> <input type="radio" id="other" name="gender" value="other"> <label
+                        for="other">Other</label>
 
-Submit Button <input type="submit"> - Submit Survey
+                    <label for="languages">Languages Known</label>
+                    <input type="checkbox" id="english" name="languages" value="english">
+                    <label for="english">English</label>
+                    <input type="checkbox" id="spanish" name="languages" value="spanish">
+                    <label for="spanish">Spanish</label>
+                    <input type="checkbox" id="french" name="languages" value="french">
+                    <label for="french">French</label>
+                    <select name="country" id="country">
+                        <option>United States</option>
+                        <option>Canada</option>
+                        <option>Mexico</option>
+                    </select>
+                </fieldset>
+                <h2>College Subjects</h2>
+                <fieldset>
+                    <legend>Your details</legend>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
 </body>
+
 </html>
