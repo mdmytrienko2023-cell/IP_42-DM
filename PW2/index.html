@@ -1,136 +1,27 @@
-import amazon from "./amazon.svg";
-import apple from "./apple.svg";
-import beco from "./beco.svg";
-import { ContactCallToActionSection } from "./ContactCallToActionSection";
-import dylanShaw from "./dylan-shaw.png";
-import ellipse from "./ellipse.png";
-import { FooterSection } from "./FooterSection";
-import google from "./google.svg";
-import { NavigationSection } from "./NavigationSection";
-import nestle from "./nestle.svg";
-import { PetProductsAndServicesSection } from "./PetProductsAndServicesSection";
-import { PetStoreHeroSection } from "./PetStoreHeroSection";
-import walmart from "./walmart.svg";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<header>
 
-const partnerLogos = [
-  {
-    src: nestle,
-    alt: "Nestlé",
-    className:
-      "absolute top-[calc(50.00%_-_17px)] left-[calc(50.00%_-_468px)] w-[133px] h-[35px]",
-  },
-  {
-    src: apple,
-    alt: "Apple",
-    className:
-      "absolute top-[calc(50.00%_-_17px)] left-[calc(50.00%_-_264px)] w-[29px] h-[35px]",
-  },
-  {
-    src: beco,
-    alt: "Beco",
-    className:
-      "absolute top-[calc(50.00%_-_20px)] left-[calc(50.00%_-_165px)] w-[60px] h-10",
-  },
-  {
-    src: amazon,
-    alt: "Amazon",
-    className:
-      "absolute top-[calc(50.00%_-_17px)] left-[calc(50.00%_-_35px)] w-[116px] h-[35px]",
-  },
-  {
-    src: google,
-    alt: "Google",
-    className:
-      "absolute top-[calc(50.00%_-_17px)] left-[calc(50.00%_+_151px)] w-[106px] h-[35px]",
-  },
-  {
-    src: walmart,
-    alt: "Walmart",
-    className:
-      "absolute top-[calc(50.00%_-_17px)] left-[calc(50.00%_+_327px)] w-[140px] h-[35px]",
-  },
-];
+</header>
 
-export const Home = (): JSX.Element => {
-  return (
-    <div className="relative flex flex-col items-start bg-[#ffffff]">
-      <NavigationSection />
-      <PetStoreHeroSection />
-      <section
-        aria-label="PetWorld video"
-        className="relative h-[600px] w-full self-stretch bg-[#f2faf8]"
-      >
-        <video
-          className="relative left-[calc(50.00%_-_383px)] top-[calc(50.00%_-_230px)] h-full w-full object-cover"
-          autoPlay
-          controls
-          loop
-          muted
-          playsInline
-          src="https://cdn.animaapp.com/projects/60d876f00b85a9c710f9b3a3/files/pexels-yaroslav-shuraev-9632184.mp4"
-        >
-          Your browser does not support the video tag.
-        </video>
-      </section>
-      <section
-        aria-label="PetWorld partners"
-        className="relative h-[200px] w-full self-stretch bg-[#ffffff]"
-      >
-        <div className="relative left-[172px] top-20 h-10 w-[935px]">
-          {partnerLogos.map((logo) => (
-            <img
-              key={logo.alt}
-              className={logo.className}
-              src={logo.src}
-              alt={logo.alt}
-            />
-          ))}
-        </div>
-      </section>
-      <PetProductsAndServicesSection />
-      <section
-        aria-label="Customer testimonial"
-        className="relative h-[500px] w-full self-stretch bg-[#ece7fb]"
-      >
-        <div className="relative left-[calc(50.00%_-_416px)] top-[calc(50.00%_-_200px)] inline-flex items-center justify-center gap-[101px] border border-solid border-black bg-[#ffffff]">
-          <div className="relative inline-flex flex-[0_0_auto] items-center justify-center gap-[60px]">
-            <div
-              className="relative h-[400px] w-[353px] bg-[url(/image.png)] bg-[100%_100%]"
-              role="img"
-              aria-label="Customer testimonial portrait"
-            >
-              <img
-                className="absolute left-0 top-0 h-full w-full"
-                src={ellipse}
-                alt=""
-                aria-hidden="true"
-              />
-            </div>
-            <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-10">
-              <div className="relative inline-flex flex-[0_0_auto] flex-col items-start gap-5">
-                <div
-                  className="relative h-[45.53px] w-[61.84px] bg-[url(/image-2.svg)] bg-[100%_100%]"
-                  aria-hidden="true"
-                />
-                <p className="relative w-[418px] font-secondary-body-text-title-18px-semibold text-[length:var(--secondary-body-text-title-18px-semibold-font-size)] font-[number:var(--secondary-body-text-title-18px-semibold-font-weight)] leading-[var(--secondary-body-text-title-18px-semibold-line-height)] tracking-[var(--secondary-body-text-title-18px-semibold-letter-spacing)] text-[#2d2d2d] [font-style:var(--secondary-body-text-title-18px-semibold-font-style)]">
-                  We love using &#39;PETWORLD&#39;
-                  products.&nbsp;&nbsp;Environmentally friendly and sustainable.{" "}
-                  <br />
-                  We have the sustainable dog bowls and regularly use the mint
-                  scented poo bags which were all such great value for money.
-                </p>
-              </div>
-              <img
-                className="relative mb-[-3.64px] ml-[-3.61px] h-[27.96px] w-[113.52px]"
-                src={dylanShaw}
-                alt="Dylan Shaw"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <ContactCallToActionSection />
-      <FooterSection />
-    </div>
-  );
-};
+<body>
+  <main>
+    <section class="hero">
+
+    </section>
+    <section class="features">
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
+<!img src="assets/Accessories icon.svg" alt="Accessories icon">
