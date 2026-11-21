@@ -10,23 +10,29 @@
             display: block;
             margin-top: 10px;
         }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
     </style>
 </head>
-
 <body>
     <header>
-        <img src="assets/Logo.svg" alt="Petworld Logo">
-        <img src="assets/Secondary CTA - Log in.png" alt="Log in Button">
-    </header>
-    <main>
-        <section>
-            <form action="." method="post">
+        <div class="header"> 
+            <img src="assets/Logo.svg" alt="Petworld Logo">
+            <img src="assets/Secondary CTA - Log in.png" alt="Log in Button">
+        </div>
+        </header>
+        <main>
+            <section class="hero">
                 <h2>Pet Store & Beyond</h2>
                 <h3>This is a sample landing page, created with Figma and Anima. No coding involved.</h3>
+                <img src="assets/Primary CTA - Get Started.png" alt="Get Started Button">
                 <img src="assets/Image (1).png" alt="Image 1">
                 <img src="assets/Image (2).png" alt="Image 2">
-            </form>
         </section>
+
         <section>
             <form action="." method="post">
                 <img src="assets/Nestle.svg" alt="Nestle Logo">
@@ -40,10 +46,46 @@
         <section>
             <form action="." method="post">
               <img src="assets/Pet food icon.svg" alt="Best quality Pet Food">
+                <h3>Super delicious food. Available in a range of delicious flavors.</h3>
               <img src="assets/Accessories icon.svg" alt="Toys & Accessories icon">
+                <h3>Soft toys, chew toys, and rope toys. Strong, interactive, and fun.</h3>
               <img src="assets/Medical icon.svg" alt="Pets medical care">
+                <h3>You can get a wide range of great treatments for your dog.</h3>
               <img src="assets/Grooming icon.svg" alt="Full service Grooming">
+                <h3>It's the right time to groom your dog with a variety of treatments.</h3>
             </form>
+        </section>
+        <section>
+            <img src="assets/Image (3).png" alt="Image 3">
+            <img src="assets/Quote icon.svg" alt="Quote icon">
+            <h4>We love using 'PETWORLD' products.  Environmentally friendly and sustainable. 
+We have the sustainable dog bowls and regularly use the mint scented poo bags which were all such great value for money.</h4>
+            <h3>Dylan Shaw</h3>
+        </section>
+        <section>
+            <h1>Let’s talk, woof!</h1>
+            <h4>You can ask us questions about your pet, and we will be happy to answer you!</h4>
+            <img src="assets/Primary CTA - Contact Us.png" alt="Contact Us Button">
+            <img src="assets/Image (4).png" alt="Image 4">
+        </section>
+        <section>
+            <img src="assets/Logo.svg" alt="Petworld Logo">
+            <form action="." method="post">
+                <label for="email"> Updates right to your Inbox</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Send">
+            </form>
+ PETWORLD 2022  Privacy policy  Terms of use
+        </section>
+        <section>
+            Our story   Pet care        Shop
+            FAQ         Treatments      Pet Food
+            Contact     Health          Toys
+                        Hygiene         Accessories
+            <img src="assets/Facebook.svg" alt="Facebook Logo">
+            <img src="assets/Linkedin.svg" alt="LinkedIn Logo">
+            <img src="assets/Instagram.svg" alt="Instagram Logo">
+            <img src="assets/Twitter.svg" alt="Twitter Logo">
         </section>
     </main>
 
